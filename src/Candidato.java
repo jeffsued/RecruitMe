@@ -3,20 +3,15 @@ import java.util.Objects;
 public class Candidato{
     private String email;
     private String nome;
-    private double pontosXp;
     
 
-    public Candidato(String n, String e,double xp){
+    public Candidato(String n, String e){
         this.email = e;
         this.nome = n;
-        this.pontosXp = xp;
     }
  
     public String getEmail() {
         return email;
-    }
-    public double getPontosXp(){
-        return pontosXp;
     }
     public String getNome() {
         return nome;
@@ -24,7 +19,7 @@ public class Candidato{
 
     @Override
     public String toString() {
-        return nome + " - " + email + " (" + pontosXp + " pts)";
+        return nome + " - " + email ;
     }
 
 	@Override
